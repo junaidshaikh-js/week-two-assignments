@@ -61,6 +61,15 @@ button {
   filter: brightness(60%);
 }
 
+.top-lr-border {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.p-5x {
+  padding-top: 0.5rem;
+}
+
 /* CARD */
 .card {
   background-color: white;
@@ -68,12 +77,6 @@ button {
   margin: 1rem auto;
   padding-bottom: 0.4rem;
   max-width: 400px;
-}
-
-.card,
-.card--info img {
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
 }
 
 .card--info div,
@@ -114,9 +117,13 @@ button {
   align-items: center;
 }
 
+.flex-start {
+  justify-content: flex-start;
+}
+
 .action-link {
   color: var(--blue);
-  padding: 0.3rem;
+  padding: 0.4rem;
 }
 
 .action-link:hover {
