@@ -4,9 +4,59 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+
     <!-- stylesheet -->
     <link rel="stylesheet" href="./index.css" />
-    <title>Basic Card Component</title>
+    <title>Card Component</title>
   </head>
-  <body></body>
+  <body>
+    <div class="main-wrapper">
+      <main>
+        <!-- BASIC CARD -->
+        <div class="card">
+          <div class="card--header">
+            <img src="../assets/cityscape.jpg" alt="cityscape image" />
+          </div>
+
+          <div class="card--content">
+            <div class="card--body">
+              <h2 class="title">Our Changing Planet</h2>
+              <p class="author">by Junaid Shaikh</p>
+              <p class="card-info">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem,
+                perferendis?
+              </p>
+            </div>
+
+            <div class="card--actions">
+              <a href="#" class="action-link">READ</a>
+              <a href="#" class="action-link">BOOKMARK</a>
+
+              <button type="button" class="action-icon" title="Add to Favorite">
+                <i class="far fa-heart" aria-hidden="true"></i>
+                <span class="visually-hidden">Add to Favorite</span>
+              </button>
+
+              <button type="button" class="action-icon" title="Share">
+                <i class="fas fa-share-alt" aria-hidden="true"></i>
+                <span class="visually-hidden">Share</span>
+              </button>
+
+              <button type="button" class="action-icon" title="More Options">
+                <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                <span class="visually-hidden">More Options</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>
