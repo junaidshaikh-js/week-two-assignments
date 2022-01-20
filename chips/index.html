@@ -25,17 +25,21 @@
       <main>
         <div class="chip-container">
           <div class="chip-wrapper">
-            <div class="chip">Text</div>
+            <div class="chip">Banana</div>
             <span class="close"><i class="fas fa-times"></i></span>
           </div>
 
-          <label for="fav-fruit" class="visually-hidden">Favorite Fruits</label>
-          <input
-            list="fruits"
-            type="text"
-            id="fav-fruit"
-            placeholder="New Fruit"
-          />
+          <div class="input-wrapper">
+            <input
+              list="fruits"
+              type="text"
+              id="fav-fruit"
+              placeholder="New Fruit"
+            />
+            <label for="fav-fruit" class="visually-hidden"
+              >Favorite Fruits</label
+            >
+          </div>
         </div>
 
         <datalist id="fruits">
