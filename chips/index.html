@@ -4,13 +4,51 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+
     <!-- stylesheet -->
     <link rel="stylesheet" href="./index.css" />
 
     <title>Chips Inside Container</title>
   </head>
   <body>
-    <h1>Chips</h1>
+    <div class="wrapper">
+      <header>
+        <h1>Chips</h1>
+      </header>
+      <main>
+        <div class="chip-container">
+          <div class="chip-wrapper">
+            <div class="chip">Text</div>
+            <span class="close"><i class="fas fa-times"></i></span>
+          </div>
+
+          <label for="fav-fruit" class="visually-hidden">Favorite Fruits</label>
+          <input
+            list="fruits"
+            type="text"
+            id="fav-fruit"
+            placeholder="New Fruit"
+          />
+        </div>
+
+        <datalist id="fruits">
+          <option value="banana"></option>
+          <option value="strawberry"></option>
+          <option value="orange"></option>
+          <option value="apple"></option>
+          <option value="kiwi"></option>
+          <option value="cherry"></option>
+        </datalist>
+      </main>
+    </div>
+
     <!-- script -->
     <script src="./index.js"></script>
   </body>

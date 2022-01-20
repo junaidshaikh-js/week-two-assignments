@@ -9,3 +9,60 @@ html {
   margin: 0;
   padding: 0;
 }
+
+/* GENERAL  */
+body {
+  font-family: monospace;
+}
+
+/* UTILITY */
+.visually-hidden {
+  position: absolute;
+  left: 0;
+  top: -5000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* CHIP */
+.chip-container {
+  border-bottom: 3px solid royalblue;
+  margin: 2rem auto;
+  max-width: 400px;
+  padding-bottom: 0.7rem;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.chip-wrapper {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  color: black;
+  display: inline-block;
+  margin: 0.6rem;
+  padding: 0.5rem 0.6rem;
+  position: relative;
+  /* width: 80px; */
+}
+
+.chip {
+  display: inline-block;
+  font-size: 1.2rem;
+  margin: 0 1.5rem 0 0.4rem;
+}
+
+.close {
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 10px;
+  top: 22%;
+}
+
+input {
+  padding: 0.6rem;
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+}
