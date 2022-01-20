@@ -15,6 +15,12 @@ body {
   font-family: monospace;
 }
 
+h1 {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 2rem;
+}
+
 /* UTILITY */
 .visually-hidden {
   position: absolute;
@@ -25,39 +31,55 @@ body {
   overflow: hidden;
 }
 
+/* SITEWIDE */
+.wrapper {
+  margin: 0 1rem;
+}
+
 /* CHIP */
 .chip-container {
-  border-bottom: 3px solid royalblue;
+  border-bottom: 1px solid royalblue;
   margin: 2rem auto;
-  max-width: 400px;
+  max-width: 600px;
   padding-bottom: 0.7rem;
   display: flex;
   flex-flow: row wrap;
 }
 
+.chip-wrapper,
+.input-wrapper {
+  margin: 0.3rem;
+}
+
 .chip-wrapper {
   background-color: #e0e0e0;
-  border-radius: 10px;
+  border-radius: 20px;
   color: black;
-  display: inline-block;
-  margin: 0.6rem;
-  padding: 0.5rem 0.6rem;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
   position: relative;
-  /* width: 80px; */
 }
 
 .chip {
   display: inline-block;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 0 1.5rem 0 0.4rem;
+  vertical-align: center;
 }
 
 .close {
   cursor: pointer;
-  font-size: 20px;
+  font-size: 16px;
   position: absolute;
-  right: 10px;
-  top: 22%;
+  right: 12px;
+  top: 50%;
+  color: gray;
+  transform: translateY(-50%);
+}
+
+.close:hover {
+  color: black;
 }
 
 input {
@@ -65,4 +87,9 @@ input {
   border: none;
   outline: none;
   font-size: 1.1rem;
+  width: 150px;
+}
+
+input:focus {
+  border-bottom: 2px solid red;
 }
