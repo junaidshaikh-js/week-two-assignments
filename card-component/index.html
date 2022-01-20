@@ -18,153 +18,252 @@
   </head>
   <body>
     <div class="main-wrapper">
+      <h1>Card Components</h1>
       <main>
         <!-- BASIC CARD -->
-        <div class="card top-lr-border">
-          <div class="card--info">
-            <img
-              src="../assets/cityscape.jpg"
-              alt="cityscape image"
-              class="top-lr-border"
-            />
+        <div class="card-wrppper">
+          <h2 class="card-title">Basic Card</h2>
+          <div class="card top-lr-border">
+            <div class="card--info">
+              <img
+                src="../assets/cityscape.jpg"
+                alt="cityscape image"
+                class="top-lr-border"
+              />
 
-            <div class="card--header">
-              <h2 class="title">Our Changing Planet</h2>
-              <p class="author">by Junaid Shaikh</p>
+              <div class="card--header">
+                <h2 class="title">Our Changing Planet</h2>
+                <p class="author">by Junaid Shaikh</p>
+              </div>
+
+              <div class="card--about">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem,
+                  perferendis?
+                </p>
+              </div>
             </div>
 
-            <div class="card--about">
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem,
-                perferendis?
-              </p>
+            <div class="card--actions">
+              <a href="#" class="action-link">READ</a>
+              <a href="#" class="action-link">BOOKMARK</a>
+
+              <button type="button" class="action-icon" title="Add to Favorite">
+                <i class="far fa-heart" aria-hidden="true"></i>
+                <span class="visually-hidden">Add to Favorite</span>
+              </button>
+
+              <button type="button" class="action-icon" title="Share">
+                <i class="fas fa-share-alt" aria-hidden="true"></i>
+                <span class="visually-hidden">Share</span>
+              </button>
+
+              <button type="button" class="action-icon" title="More Options">
+                <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                <span class="visually-hidden">More Options</span>
+              </button>
             </div>
-          </div>
-
-          <div class="card--actions">
-            <a href="#" class="action-link">READ</a>
-            <a href="#" class="action-link">BOOKMARK</a>
-
-            <button type="button" class="action-icon" title="Add to Favorite">
-              <i class="far fa-heart" aria-hidden="true"></i>
-              <span class="visually-hidden">Add to Favorite</span>
-            </button>
-
-            <button type="button" class="action-icon" title="Share">
-              <i class="fas fa-share-alt" aria-hidden="true"></i>
-              <span class="visually-hidden">Share</span>
-            </button>
-
-            <button type="button" class="action-icon" title="More Options">
-              <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
-              <span class="visually-hidden">More Options</span>
-            </button>
           </div>
         </div>
 
         <!-- CARD W/TEXT OVER MEDIA -->
-        <div class="card pos-rel">
-          <div class="card--info">
-            <img
-              src="../assets/cityscape.jpg"
-              alt="cityscape image"
-              class="medium-brightness"
-            />
+        <div class="card-wrapper">
+          <h2 class="card-title">Card w/Text Over Media</h2>
+          <div class="card pos-rel top-lr-border">
+            <div class="card--info">
+              <img
+                src="../assets/cityscape.jpg"
+                alt="cityscape image"
+                class="medium-brightness top-lr-border"
+              />
 
-            <div class="card--header over-media">
-              <h2 class="title">Our Changing Planet</h2>
-              <p class="author">by Junaid Shaikh</p>
+              <div class="card--header over-media">
+                <h2 class="title">Our Changing Planet</h2>
+                <p class="author">by Junaid Shaikh</p>
+              </div>
+
+              <div class="card--about">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem,
+                  perferendis?
+                </p>
+              </div>
             </div>
 
-            <div class="card--about">
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem,
-                perferendis?
-              </p>
+            <div class="card--actions">
+              <a href="#" class="action-link">READ</a>
+              <a href="#" class="action-link">BOOKMARK</a>
+
+              <button type="button" class="action-icon" title="Add to Favorite">
+                <i class="far fa-heart" aria-hidden="true"></i>
+                <span class="visually-hidden">Add to Favorite</span>
+              </button>
+
+              <button type="button" class="action-icon" title="Share">
+                <i class="fas fa-share-alt" aria-hidden="true"></i>
+                <span class="visually-hidden">Share</span>
+              </button>
+
+              <button type="button" class="action-icon" title="More Options">
+                <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                <span class="visually-hidden">More Options</span>
+              </button>
             </div>
-          </div>
-
-          <div class="card--actions">
-            <a href="#" class="action-link">READ</a>
-            <a href="#" class="action-link">BOOKMARK</a>
-
-            <button type="button" class="action-icon" title="Add to Favorite">
-              <i class="far fa-heart" aria-hidden="true"></i>
-              <span class="visually-hidden">Add to Favorite</span>
-            </button>
-
-            <button type="button" class="action-icon" title="Share">
-              <i class="fas fa-share-alt" aria-hidden="true"></i>
-              <span class="visually-hidden">Share</span>
-            </button>
-
-            <button type="button" class="action-icon" title="More Options">
-              <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
-              <span class="visually-hidden">More Options</span>
-            </button>
           </div>
         </div>
 
         <!-- BASIC W/HEADER -->
-        <div class="card p-5x">
-          <div class="card--info">
-            <div class="card--header">
-              <h2 class="title">Our Changing Planet</h2>
-              <p class="author">by Junaid Shaikh</p>
+        <div class="card-wrapper">
+          <h2 class="card-title">Basic w/Header</h2>
+          <div class="card p-5x">
+            <div class="card--info">
+              <div class="card--header">
+                <h2 class="title">Our Changing Planet</h2>
+                <p class="author">by Junaid Shaikh</p>
+              </div>
+
+              <img src="../assets/cityscape.jpg" alt="cityscape image" />
+
+              <div class="card--about">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem,
+                  perferendis?
+                </p>
+              </div>
             </div>
 
-            <img src="../assets/cityscape.jpg" alt="cityscape image" />
+            <div class="card--actions">
+              <a href="#" class="action-link">READ</a>
+              <a href="#" class="action-link">BOOKMARK</a>
 
-            <div class="card--about">
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem,
-                perferendis?
-              </p>
+              <button type="button" class="action-icon" title="Add to Favorite">
+                <i class="far fa-heart" aria-hidden="true"></i>
+                <span class="visually-hidden">Add to Favorite</span>
+              </button>
+
+              <button type="button" class="action-icon" title="Share">
+                <i class="fas fa-share-alt" aria-hidden="true"></i>
+                <span class="visually-hidden">Share</span>
+              </button>
+
+              <button type="button" class="action-icon" title="More Options">
+                <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                <span class="visually-hidden">More Options</span>
+              </button>
             </div>
-          </div>
-
-          <div class="card--actions">
-            <a href="#" class="action-link">READ</a>
-            <a href="#" class="action-link">BOOKMARK</a>
-
-            <button type="button" class="action-icon" title="Add to Favorite">
-              <i class="far fa-heart" aria-hidden="true"></i>
-              <span class="visually-hidden">Add to Favorite</span>
-            </button>
-
-            <button type="button" class="action-icon" title="Share">
-              <i class="fas fa-share-alt" aria-hidden="true"></i>
-              <span class="visually-hidden">Share</span>
-            </button>
-
-            <button type="button" class="action-icon" title="More Options">
-              <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
-              <span class="visually-hidden">More Options</span>
-            </button>
           </div>
         </div>
 
         <!-- BASIC W/ONLY BUTTONS -->
-        <div class="card p-5x">
-          <div class="card--info">
-            <div class="card--header">
-              <h2 class="title">Our Changing Planet</h2>
-              <p class="author">by Junaid Shaikh</p>
+        <div class="card-wrapper">
+          <h2 class="card-title">Basic w/Only Buttons</h2>
+          <div class="card top-lr-border">
+            <div class="card--info">
+              <img
+                src="../assets/cityscape.jpg"
+                alt="cityscape image"
+                class="top-lr-border"
+              />
+
+              <div class="card--header">
+                <h2 class="title">Our Changing Planet</h2>
+                <p class="author">by Junaid Shaikh</p>
+              </div>
+
+              <div class="card--about">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem,
+                  perferendis?
+                </p>
+              </div>
             </div>
 
-            <img src="../assets/cityscape.jpg" alt="cityscape image" />
-
-            <div class="card--about">
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem,
-                perferendis?
-              </p>
+            <div class="card--actions flex-start">
+              <a href="#" class="action-link">READ</a>
+              <a href="#" class="action-link">BOOKMARK</a>
             </div>
           </div>
+        </div>
 
-          <div class="card--actions flex-start">
-            <a href="#" class="action-link">READ</a>
-            <a href="#" class="action-link">BOOKMARK</a>
+        <!-- BASIC W/ONLY ICONS -->
+        <div class="card-wrapper">
+          <h2 class="card-title">Basic w/Only Icons</h2>
+          <div class="card top-lr-border">
+            <div class="card--info">
+              <img
+                src="../assets/cityscape.jpg"
+                alt="cityscape image"
+                class="top-lr-border"
+              />
+
+              <div class="card--header">
+                <h2 class="title">Our Changing Planet</h2>
+                <p class="author">by Junaid Shaikh</p>
+              </div>
+
+              <div class="card--about">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem,
+                  perferendis?
+                </p>
+              </div>
+            </div>
+
+            <div class="card--actions flex-end">
+              <button type="button" class="action-icon" title="Add to Favorite">
+                <i class="far fa-heart" aria-hidden="true"></i>
+                <span class="visually-hidden">Add to Favorite</span>
+              </button>
+
+              <button type="button" class="action-icon" title="Share">
+                <i class="fas fa-share-alt" aria-hidden="true"></i>
+                <span class="visually-hidden">Share</span>
+              </button>
+
+              <button type="button" class="action-icon" title="More Options">
+                <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                <span class="visually-hidden">More Options</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- HORIZANTAL IMAGE AND TEXT -->
+        <div class="card-wrapper">
+          <h2 class="card-title">Horizantal Image and Text</h2>
+          <div class="card top-lr-border">
+            <div class="card--info flex">
+              <img
+                src="../assets/cityscape.jpg"
+                alt="cityscape image"
+                class="s-img top-lr-border"
+              />
+
+              <div class="card--header">
+                <h2 class="title">Our Changing Planet</h2>
+                <p class="author">by Junaid Shaikh</p>
+              </div>
+            </div>
+
+            <div class="card--actions">
+              <a href="#" class="action-link">READ</a>
+              <a href="#" class="action-link">BOOKMARK</a>
+
+              <button type="button" class="action-icon" title="Add to Favorite">
+                <i class="far fa-heart" aria-hidden="true"></i>
+                <span class="visually-hidden">Add to Favorite</span>
+              </button>
+
+              <button type="button" class="action-icon" title="Share">
+                <i class="fas fa-share-alt" aria-hidden="true"></i>
+                <span class="visually-hidden">Share</span>
+              </button>
+
+              <button type="button" class="action-icon" title="More Options">
+                <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                <span class="visually-hidden">More Options</span>
+              </button>
+            </div>
           </div>
         </div>
       </main>

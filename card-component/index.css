@@ -25,6 +25,7 @@ html {
 
 body {
   background-color: #f7f7f7;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 img {
@@ -41,6 +42,14 @@ button {
   border: none;
   cursor: pointer;
   outline: none;
+}
+
+h1 {
+  text-align: center;
+  padding: 0.4rem;
+  font-family: monospace;
+  font-size: 2rem;
+  margin: 2rem 0 5rem 0;
 }
 
 /* UTILITY */
@@ -70,13 +79,39 @@ button {
   padding-top: 0.5rem;
 }
 
+.s-img {
+  width: 120px;
+  height: 120px;
+}
+
+.flex {
+  display: flex;
+}
+
+.card-title {
+  text-align: center;
+}
+
+/* LAYOUT */
+.main-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  align-items: flex-start;
+  gap: 50px 20px;
+}
+
 /* CARD */
 .card {
   background-color: white;
   box-shadow: 4px 4px 7px gray;
   margin: 1rem auto;
   padding-bottom: 0.4rem;
-  max-width: 400px;
+  max-width: 360px;
 }
 
 .card--info div,
@@ -119,6 +154,10 @@ button {
 
 .flex-start {
   justify-content: flex-start;
+}
+
+.flex-end {
+  justify-content: flex-end;
 }
 
 .action-link {
