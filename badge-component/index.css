@@ -10,3 +10,46 @@ html {
   margin: 0;
   padding: 0;
 }
+
+/* general */
+p {
+  margin: 2rem 0;
+}
+
+.badge-text {
+  position: relative;
+}
+
+.badge-text::after {
+  background-color: blue;
+  border-radius: 50%;
+  content: "4";
+  color: white;
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+/* sitewide */
+.main-wrapper {
+  max-width: 600px;
+  margin: 5rem auto;
+}
+
+main {
+  margin: 1rem;
+}
+
+/* badge style */
+.medium-badge::after {
+  height: 20px;
+  top: -10px;
+  width: 20px;
+}
+
+.large-badge::after {
+  height: 30px;
+  top: -15px;
+  width: 30px;
+  font-size: 1.5rem;
+}
