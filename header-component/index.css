@@ -10,3 +10,63 @@ html {
   margin: 0;
   padding: 0;
 }
+
+button {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+p {
+  margin-top: 1rem;
+}
+
+.wrapper {
+  margin-top: 5rem;
+}
+
+/* utility */
+.pos-sticky {
+  position: sticky;
+  top: 0;
+}
+
+/* header component */
+.header-component-wrapper {
+  outline: 2px solid black;
+  max-width: 600px;
+  margin: 5rem auto;
+  height: 200px;
+  overflow-y: scroll;
+}
+
+header {
+  background-color: #6200ee;
+  color: white;
+  padding: 1rem;
+  margin: 0;
+}
+
+section {
+  padding: 0.6rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+header div,
+h2 {
+  display: inline-block;
+}
+
+span i {
+  cursor: pointer;
+  font-size: 20px;
+  padding-right: 0.5rem;
+}
+
+.buttons i {
+  padding: 0 0.5rem;
+}
