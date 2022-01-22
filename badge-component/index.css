@@ -11,23 +11,21 @@ html {
   padding: 0;
 }
 
+button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  padding: 0.5rem 0.8rem;
+}
+
 /* general */
 p {
   margin: 2rem 0;
 }
 
-.badge-text {
-  position: relative;
-}
-
-.badge-text::after {
-  background-color: blue;
-  border-radius: 50%;
-  content: "4";
-  color: white;
-  display: inline-block;
-  position: absolute;
-  text-align: center;
+/* utility */
+.hide {
+  display: none;
 }
 
 /* sitewide */
@@ -41,6 +39,21 @@ main {
 }
 
 /* badge style */
+.badge {
+  position: relative;
+  margin-left: 1rem;
+}
+
+.badge::after {
+  background-color: blue;
+  border-radius: 50%;
+  content: "4";
+  color: white;
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
 .medium-badge::after {
   height: 20px;
   top: -10px;
@@ -52,4 +65,55 @@ main {
   top: -15px;
   width: 30px;
   font-size: 1.5rem;
+}
+
+.badge-button-wrapper,
+.badge-icon-wrapper,
+.badge-toggle-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.badge-button {
+  background-color: rebeccapurple;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-left: 2rem;
+}
+
+.badge-button::after {
+  height: 20px;
+  width: 20px;
+  left: -7px;
+  top: -10px;
+  background-color: rgb(255, 104, 104);
+  font-size: initial;
+  font-weight: normal;
+}
+
+[class^="fas"]::after {
+  height: 20px;
+  width: 20px;
+  font-size: initial;
+  top: -6px;
+  right: -8px;
+  background-color: rgb(255, 92, 92);
+}
+
+.toggle-badge {
+  cursor: pointer;
+  position: relative;
+}
+
+.notification-badge {
+  position: absolute;
+  top: -10px;
+  background-color: red;
+  border-radius: 50%;
+  height: 22px;
+  width: 22px;
+  font-size: 1rem;
 }

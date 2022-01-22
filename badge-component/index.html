@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+
     <!-- stylesheet -->
     <link rel="stylesheet" href="./index.css" />
 
@@ -13,11 +21,33 @@
     <div class="main-wrapper">
       <main>
         <div class="badge-wrapper">
-          <p class="badge-text medium-badge">Text with badge</p>
+          <p class="badge medium-badge">Text with badge</p>
 
-          <p class="badge-text large-badge">Text with badge</p>
+          <p class="badge large-badge">Text with badge</p>
+
+          <div class="badge-button-wrapper">
+            <span>button with badge on left</span>
+            <button type="button" class="badge badge-button">Action</button>
+          </div>
+
+          <div class="badge-icon-wrapper">
+            <p>Icon with badge</p>
+            <i class="fas fa-2x fa-home badge"></i>
+          </div>
+
+          <div class="badge-toggle-wrapper">
+            <p cla>Button toggles icon visibility</p>
+            <button class="badge-button toggle-badge">
+              Hide
+              <span class="notification-badge">7</span>
+            </button>
+            <!-- <span class="notification-badge">7</span> -->
+          </div>
         </div>
       </main>
     </div>
+
+    <!-- script -->
+    <script src="./index.js"></script>
   </body>
 </html>
