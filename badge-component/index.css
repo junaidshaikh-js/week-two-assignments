@@ -67,9 +67,7 @@ main {
   font-size: 1.5rem;
 }
 
-.badge-button-wrapper,
-.badge-icon-wrapper,
-.badge-toggle-wrapper {
+.badge-button-wrapper {
   display: flex;
   align-items: center;
   margin-left: 1rem;
