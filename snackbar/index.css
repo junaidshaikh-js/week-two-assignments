@@ -29,6 +29,31 @@ a {
   text-decoration: none;
 }
 
+.show {
+  display: block;
+}
+
+/* sitewide */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* btn */
+.button-container {
+  text-align: center;
+  margin: 2rem;
+}
+
+.btn {
+  background-color: #6e14ef;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+}
+
 /* snackbar */
 .snackbar {
   background-color: #333333;
@@ -38,12 +63,16 @@ a {
   justify-content: space-between;
   align-items: center;
   width: 400px;
-  margin: 0 auto;
   padding: 0.8rem 0.5rem;
   position: absolute;
   bottom: 10%;
+  left: 10px;
+}
+
+.snackbar-centered {
   left: 0;
   right: 0;
+  margin: 0 auto;
 }
 
 .snackbar-actions {
