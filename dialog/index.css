@@ -10,3 +10,103 @@ html {
   margin: 0;
   padding: 0;
 }
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+i {
+  font-size: 30px;
+  color: inherit;
+  margin-right: 20px;
+}
+
+label {
+  margin: 0.5rem;
+}
+
+/* dialog */
+.dialog-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #aaaaaa;
+  position: fixed;
+  z-index: 1;
+  min-height: 100vh;
+  visibility: hidden;
+  width: 100vw;
+}
+
+.dialog {
+  background-color: white;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.dialog div:not(:last-child) {
+  border-bottom: 1px solid;
+}
+
+.dialog__header,
+.dialog__body,
+.dialog__footer {
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+.dialog__footer {
+  text-align: right;
+}
+
+.dialog-btn {
+  color: #6200ee;
+  font-size: 1rem;
+  text-align: right;
+  padding: 0 0.8rem;
+}
+
+/* simple dialog */
+.dialog-simple-list li {
+  font-size: 1.2rem;
+  margin: 0 1rem 1rem 1rem;
+}
+
+/* confirmation dialog */
+.dialog.confirmation form {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  font-size: 1.2rem;
+  max-height: 100px;
+}
+
+.show {
+  animation: show 0.3s linear;
+  visibility: visible;
+}
+
+/* keyframes */
+@keyframes show {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
