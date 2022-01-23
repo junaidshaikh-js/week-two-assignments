@@ -17,78 +17,95 @@
     <title>Dialogs</title>
   </head>
   <body>
-    <div class="dialog-wrapper">
-      <div class="dialog alert">
-        <div class="dialog__header">
-          <h3>Dialog Header</h3>
-        </div>
-        <div class="dialog__body">
-          <p>Dialog body text</p>
-        </div>
-        <div class="dialog__footer">
-          <button class="dialog-btn">Action 1</button>
-          <button class="dialog-btn">Action 1</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="dialog-wrapper">
-      <div class="dialog simple">
-        <div class="dialog__header">
-          <h3>Dialog Header</h3>
-        </div>
-        <div class="dialog__body">
-          <ul class="dialog-simple-list">
-            <li>
-              <span><i class="fas fa-user"></i></span>
-              Item 1
-            </li>
-            <li>
-              <span><i class="fas fa-user"></i></span> Item 2
-            </li>
-            <li>
-              <span><i class="fas fa-user"></i></span> Item 3
-            </li>
-          </ul>
+    <main>
+      <div class="dialog-control-wrapper">
+        <div class="dialog-controls">
+          <button class="btn dialog-control alert-btn" data-dialog="alert">
+            Open Alert Dialog
+          </button>
+          <button class="btn dialog-control simple-btn" data-dialog="simple">
+            Open Simple Dialog
+          </button>
+          <button
+            class="btn dialog-control confirm-btn"
+            data-dialog="confirmation"
+          >
+            Open confirmation Dialog
+          </button>
         </div>
       </div>
-    </div>
-
-    <div class="dialog-wrapper">
-      <div class="dialog confirmation">
-        <div class="dialog__header">
-          <h3>Dialog Header</h3>
-        </div>
-        <div class="dialog__body">
-          <form>
-            <label for="item1">
-              <input type="radio" name="item" id="item1" />
-              Item 1
-            </label>
-
-            <label for="item2">
-              <input type="radio" name="item" id="item2" />
-              Item 2
-            </label>
-
-            <label for="item3">
-              <input type="radio" name="item" id="item3" />
-              Item 3
-            </label>
-
-            <label for="item4">
-              <input type="radio" name="item" id="item4" />
-              Item 4
-            </label>
-          </form>
-        </div>
-        <div class="dialog__footer">
-          <button class="dialog-btn">Action 1</button>
-          <button class="dialog-btn">Action 1</button>
+      <div class="dialog-wrapper">
+        <div class="dialog alert">
+          <div class="dialog__header">
+            <h3>Dialog Header</h3>
+          </div>
+          <div class="dialog__body">
+            <p>Dialog body text</p>
+          </div>
+          <div class="dialog__footer">
+            <button class="dialog-btn">Action 1</button>
+            <button class="dialog-btn">Action 1</button>
+          </div>
         </div>
       </div>
-    </div>
 
+      <div class="dialog-wrapper">
+        <div class="dialog simple">
+          <div class="dialog__header">
+            <h3>Dialog Header</h3>
+          </div>
+          <div class="dialog__body">
+            <ul class="dialog-simple-list">
+              <li>
+                <span><i class="fas fa-user"></i></span>
+                Item 1
+              </li>
+              <li>
+                <span><i class="fas fa-user"></i></span> Item 2
+              </li>
+              <li>
+                <span><i class="fas fa-user"></i></span> Item 3
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="dialog-wrapper">
+        <div class="dialog confirmation">
+          <div class="dialog__header">
+            <h3>Dialog Header</h3>
+          </div>
+          <div class="dialog__body">
+            <form>
+              <label for="item1">
+                <input type="radio" name="item" id="item1" />
+                Item 1
+              </label>
+
+              <label for="item2">
+                <input type="radio" name="item" id="item2" />
+                Item 2
+              </label>
+
+              <label for="item3">
+                <input type="radio" name="item" id="item3" />
+                Item 3
+              </label>
+
+              <label for="item4">
+                <input type="radio" name="item" id="item4" />
+                Item 4
+              </label>
+            </form>
+          </div>
+          <div class="dialog__footer">
+            <button class="dialog-btn">Action 1</button>
+            <button class="dialog-btn">Action 1</button>
+          </div>
+        </div>
+      </div>
+    </main>
     <!-- script -->
     <script src="./index.js"></script>
   </body>
