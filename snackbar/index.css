@@ -29,10 +29,6 @@ a {
   text-decoration: none;
 }
 
-.show {
-  display: block;
-}
-
 /* sitewide */
 main {
   max-width: 800px;
@@ -55,24 +51,40 @@ main {
 }
 
 /* snackbar */
+.snackbar-container {
+  position: fixed;
+  bottom: 10%;
+  left: 10px;
+  width: 100%;
+}
+
 .snackbar {
+  animation: show 0.3s linear;
   background-color: #333333;
   border-radius: 10px;
+  box-shadow: 3px 3px 5px gray;
   color: white;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   width: 400px;
-  padding: 0.8rem 0.5rem;
-  position: absolute;
-  bottom: 10%;
-  left: 10px;
+  padding: 0.8rem;
 }
 
-.snackbar-centered {
+.snackbar.centered {
   left: 0;
   right: 0;
-  margin: 0 auto;
+  margin: 10px auto;
+}
+
+.snackbar.stacked .snackbar-message {
+  flex-basis: 100%;
+}
+
+.snackbar.stacked .snackbar-actions {
+  margin-left: auto;
+  padding-top: 1rem;
 }
 
 .snackbar-actions {
@@ -85,4 +97,15 @@ main {
 .snackbar-actions a {
   color: #af7af5;
   text-transform: uppercase;
+}
+
+/* keyframes */
+
+@keyframes show {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
