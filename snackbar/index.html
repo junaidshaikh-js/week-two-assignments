@@ -4,11 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/482053182b.js"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- stylesheet -->
     <link rel="stylesheet" href="./index.css" />
     <title>Snackbar</title>
   </head>
   <body>
+    <div class="snackbar">
+      <div class="snackbar-message">
+        <p>Can't send this photo. Retry in 5 seconds</p>
+      </div>
+      <div class="snackbar-actions">
+        <a href="#">Retry</a>
+        <button><i class="fas fa-times" title="Close"></i></button>
+      </div>
+    </div>
     <!-- script -->
     <script src="./index.js"></script>
   </body>
