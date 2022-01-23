@@ -40,6 +40,27 @@ label {
   margin: 0.5rem;
 }
 
+/* dialog controls */
+.dialog-control-wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.dialog-controls {
+  display: flex;
+  flex-direction: column;
+}
+
+.dialog-control {
+  border: 2px solid black;
+  text-transform: uppercase;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
 /* dialog */
 .dialog-wrapper {
   display: flex;
@@ -47,6 +68,7 @@ label {
   align-items: center;
   background-color: #aaaaaa;
   position: fixed;
+  top: 0;
   z-index: 1;
   min-height: 100vh;
   visibility: hidden;
@@ -97,8 +119,8 @@ label {
 }
 
 .show {
-  animation: show 0.3s linear;
   visibility: visible;
+  animation: show 0.1s linear;
 }
 
 /* keyframes */
