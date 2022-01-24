@@ -10,3 +10,70 @@ html {
   margin: 0;
   padding: 0;
 }
+
+.btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 1rem 0.8rem;
+}
+
+.tab-wrapper {
+  text-align: center;
+  max-width: 600px;
+  margin: 5rem auto;
+}
+
+.tab-container {
+  display: flex;
+  margin: 2rem 1rem;
+  position: relative;
+}
+
+.btn-tab {
+  width: calc(100% / 3);
+  text-transform: uppercase;
+}
+
+.btn-tab-scroll {
+  width: 100px;
+  flex-shrink: 0;
+}
+
+.tab-container.scroll {
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.tab-container.scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.underline,
+.underline-scroll {
+  background-color: #6200ee;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  top: 95%;
+  transition: all 100ms linear;
+}
+
+.underline {
+  width: calc(100% / 3);
+}
+
+.underline-scroll {
+  width: 100px;
+}
+
+.active {
+  background-color: #e9ddf9;
+  color: #6200ee;
+  border-radius: 5px 5px 0 0;
+  transition: all 100ms linear;
+}
